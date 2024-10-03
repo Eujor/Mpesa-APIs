@@ -13,7 +13,7 @@ $Timestamp = date('YmdHis');
 // Encrypt data to get password
 $Password = base64_encode($BusinessShortCode . $passkey . $Timestamp);
 $phone = '254743418844'; //
-$money = '1';
+$money = '01';
 $PartyA = $phone;
 $PartyB = '254708374149';
 $AccountReference = 'Eujor Mpesa stkpush';
