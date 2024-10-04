@@ -67,7 +67,7 @@ if (json_last_error() !== JSON_ERROR_NONE) {
 
 // Check for response data
 if (isset($data->CheckoutRequestID) && $data->ResponseCode == "0") {
-    echo "\tThe CheckoutRequestID for this transaction is: " . $data->CheckoutRequestID;
+    echo "The CheckoutRequestID for this transaction is: " . $data->CheckoutRequestID;
 } else {
     echo "Error: " . ($data->ResponseDescription ?? "Unknown error occurred.");
 }

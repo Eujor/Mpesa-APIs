@@ -51,11 +51,6 @@ if (!isset($result_json->access_token)) {
     die("Access token not found in response.");
 }
 
-$result = curl_exec($curl);
-$status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-$result = json_decode($result);
-echo $access_token = $result->access_token;
-
 // Store the access token for later use
 $access_token = $result_json->access_token;
 
