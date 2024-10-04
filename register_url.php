@@ -2,9 +2,9 @@
 //INCLUDE ACCESS TOKEN FILE 
 include 'accessToken.php';
 $registerurl = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl';
-$BusinessShortCode = '';
-$confirmationUrl = 'https://1c95-105-161-14-223.ngrok-free.app/Daraja-Api/confirmation_url.php';
-$validationUrl = 'https://1c95-105-161-14-223.ngrok-free.app/Daraja-Api/validation_url.php';
+$BusinessShortCode = '174379';
+$confirmationUrl = 'https://eujor.infor/darajaapp/confirmation_url.php';
+$validationUrl = 'https://eujor.infor/darajaapp//validation_url.php';
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $registerurl);
 curl_setopt($curl, CURLOPT_HTTPHEADER, array(
